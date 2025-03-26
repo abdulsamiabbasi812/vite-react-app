@@ -1,0 +1,519 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  position: sticky;
+  background: transparent;
+
+  @media (max-width: 550px) {
+    height: 50px;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 70px;
+  color: white;
+  font-size: 25px;
+
+  @media (max-width: 850px) {
+    padding-left: 20px;
+    font-size: 15px;
+  }
+
+  @media (max-width: 550px) {
+    padding-left: 10px;
+    font-size: 10px;
+  }
+
+
+}
+
+.lines {
+  display: flex;
+  padding-right: 50px;
+
+  @media (max-width: 850px) {
+    padding-right: 20px;
+  }
+
+  @media (max-width: 550px) {
+    padding-right: 12px;
+  }
+
+  @media (max-width: 349px) {
+    padding-right: 8px;
+  }
+}
+
+.ul-lines {
+  text-decoration: none;
+}
+
+.ul-lines li {
+  list-style: none;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+
+  @media (max-width: 850px) {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 550px) {
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  @media (max-width: 349px) {
+    padding: 6px;
+    font-size: 10px;
+  }
+}
+
+.ul-lines li:hover {
+  color: rgb(243, 33, 33);
+}
+
+.logo img {
+  height: 45px;
+  padding: 5px;
+  border-radius: 10px;
+
+  @media (max-width: 850px) {
+    height: 40px;
+  }
+
+  @media (max-width: 550px) {
+    height: 30px;
+  }
+
+  @media (max-width: 349px) {
+    height: 27px;
+  }
+}
+
+/* HOME SECTION */
+
+.home {
+  padding-left: 70px;
+  padding-top: 90px;
+  height: 570px;
+  color: white;
+  width: 730px;
+
+  @media (max-width: 850px) {
+    padding-left: 30px;
+    padding-top: 60px;
+    height: 400px;
+    width: 450px;
+  }
+
+  @media (max-width: 550px) {
+    padding-left: 20px;
+    padding-top: 60px;
+    width: 350px;
+    height: 350px;
+  }
+
+  @media (max-width: 349px) {
+    padding-top: 70px;
+    height: 250px;
+    width: 250px;
+  }
+
+}
+
+.home::before {
+  content: " ";
+  position: absolute;
+  background: url('/src/components/IMG/bg-1.jpg') no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.home-h6 {
+  text-align: left;
+  font-size: 20px;
+
+  @media (max-width: 850px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 349px) {
+    font-size: 8px;
+  }
+}
+
+.home-span {
+  color: rgb(255, 49, 49);
+}
+
+.home-h1 {
+  text-align: left;
+  font-size: 68px;
+
+  @media (max-width: 850px) {
+    font-size: 45px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 349px) {
+    font-size: 25px;
+  }
+}
+
+.btn {
+  padding: 15px 27px;
+  background-color: rgb(255, 49, 49);
+  border: none;
+  margin: 5px;
+  color: whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+
+  @media (max-width: 850px) {
+    padding: 15px 13px;
+    font-size: 15px;
+  }
+
+  @media (max-width: 550px) {
+    padding: 10px 8px;
+    font-size: 10px;
+  }
+
+  @media (max-width: 349px) {
+    padding: 8px 6px;
+    padding: 8px;
+  }
+
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+.btn1 {
+  padding: 15px 27px;
+  background-color: whitesmoke;
+  border: none;
+  margin: 5px;
+  color: rgb(255, 49, 49);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+
+  @media (max-width: 850px) {
+    padding: 15px 13px;
+    font-size: 15px;
+  }
+
+  @media (max-width: 550px) {
+    padding: 10px 8px;
+    font-size: 10px;
+  }
+
+  @media (max-width: 349px) {
+    padding: 8px 6px;
+    font-size: 8px;
+  }
+}
+
+.btn1:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  padding-left: 70px;
+
+  @media (max-width: 850px) {
+    padding-left: 30px;
+  }
+
+  @media (max-width: 550px) {
+    padding-left: 20px;
+  }
+
+  @media (max-width: 485px) {
+    padding-left: 15px;
+  }
+
+}
+
+.about::before {
+  content: " ";
+  position: absolute;
+  background: url('/src/components/IMG/bg-3.jpg') no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.about-text {
+  color: rgb(255, 49, 49);
+  padding-top: 70px;
+  font-size: 25px;
+  font-weight: bold;
+
+  @media (max-width: 850px) {
+    padding-top: 50px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 485px) {
+    padding-top: 30px;
+    font-size: 15px;
+  }
+
+  @media (max-width: 320px) {
+    padding-top: 23px;
+    font-size: 12px;
+  }
+}
+
+.about-h1 {
+  color: whitesmoke;
+  font-size: 30px;
+
+  @media (max-width: 850px) {
+    font-size: 23px;
+  }
+
+  @media (max-width: 485px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 15px;
+  }
+
+
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+
+  @media (max-width: 850px) {
+    width: 700px;
+  }
+
+  @media (max-width: 730px) {
+    width: 400px;
+  }
+
+  @media (max-width: 415px) {
+    width: 300px;
+  }
+
+  @media (max-width: 315px) {
+    width: 250px;
+  }
+}
+
+.about-para {
+  width: 550px;
+  display: flex;
+  color: whitesmoke;
+  padding-top: 20px;
+  font-size: 18px;
+  font-style: oblique;
+
+  @media (max-width: 870px) {
+    padding-top: 17px;
+    font-size: 13px;
+  }
+
+  @media (max-width: 580px) {
+    width: 450px;
+  }
+
+  @media (max-width: 485px) {
+    padding-top: 14px;
+    font-size: 11px;
+    width: 350px;
+  }
+
+  @media (max-width: 415px) {
+    width: 300px;
+  }
+
+  @media (max-width: 320px) {
+    width: 250px;
+  }
+
+}
+
+
+.about-btn {
+  padding: 15px 30px;
+  background-color: rgb(255, 49, 49);
+  border: none;
+  margin: 15px 0px;
+  color: whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+
+  @media (max-width: 850px) {
+    padding: 11px 22px;
+  }
+
+  @media (max-width: 730px) {
+    padding: 9px 18px;
+  }
+
+  @media (max-width: 485px) {
+    padding: 7px 15px;
+  }
+}
+
+.about-btn:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+/* CONTACT SECTION */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1024px) {}
+
+}
+
+.contact-items {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+    padding-top: 50px;
+  }
+
+  @media (max-width: 425px) {
+    padding-top: 35px;
+  }
+
+}
+
+
+.contact::before {
+  content: " ";
+  position: absolute;
+  background: url('/src/components/IMG/bg-4.jpg') no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.contact-h1{
+  @media (max-width: 425px) {
+    font-size: 20px;
+  }
+
+}
+
+.contact-submitting {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.contact-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 70px;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+
+  @media (max-width: 768px) {
+    padding: 10px 40px;
+    margin: 16px;
+    font-size: 15px;
+  }
+
+  @media (max-width: 425px) {
+    padding: 9px 35px;
+    margin: 13px;
+    font-size: 12px;
+  }
+
+}
+
+
+.contact-btn {
+  padding: 10px 40px;
+  margin-left: 145px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(255, 49, 49);
+  color: whitesmoke;
+  @media (max-width: 768px) {
+    padding: 6px 15px;
+    margin-left: 100px;
+    font-size: 15px;
+  }
+  @media (max-width: 425px) {
+    margin-left: 90px;
+  }
+
+}
+
+.contact-btn:hover {
+  background-color: black;
+}
